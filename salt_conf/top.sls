@@ -1,3 +1,5 @@
 base:
   '*':
-    - git 
+    - dev
+    - elastic_stack
+    - bro 
