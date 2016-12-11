@@ -1,14 +1,20 @@
-logstash_install:
-  pkgrepo.managed:
-    - humanname: Logstash PPA
-    - name: deb http://ppa.launchpad.net/wolfnet/logstash/ubuntu precise main
-    - dist: precise
-    - file: /etc/apt/sources.list.d/logstash.list
-    - keyid: 28B04E4A
-    - keyserver: keyserver.ubuntu.com
-    - require_in:
-      - pkg: logstash
+include:
+  - java
 
-  pkg.latest:
-    - name: logstash
-    - refresh: True
+install_key:
+  cmd.run:
+    - name: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
+save_repo:
+  cmd.run:
+    - name: echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+
+update:
+  cmd.run:
+    - name: apt-get update
+
+install_log:
+  cmd.run:
+    - name: apt-get install logstash
+
+

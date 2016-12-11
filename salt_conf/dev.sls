@@ -5,3 +5,7 @@ install_git:
 install_vim:
   pkg.installed:
     - name: vim
+
+install_curl:
+  pkg.installed:
+    - name: curl

@@ -1,3 +1,4 @@
-install_elastic:
-  pkg.installed:
-    - name: elastic
+include:
+  - logstash
+  - elastic_stack
+  - kibana

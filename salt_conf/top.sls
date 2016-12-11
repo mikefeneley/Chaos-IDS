@@ -1,5 +1,7 @@
 base:
   '*':
     - dev
-    - elastic_stack
-    - bro 
+  '*ids*'
+    - bro
+  '*data*'  
+   - elastic_stack 

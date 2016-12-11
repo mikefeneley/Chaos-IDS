@@ -21,7 +21,3 @@ bro_install:
   cmd.run:
     - name: make install
     - cwd: /tmp/bro
-
-update_path_bro:
-  cmd.run:
-    - name export PATH=/usr/local/bro/bin:$PATH
