@@ -4,4 +4,4 @@ base:
   '*ids*'
     - bro
   '*data*'  
-   - elastic_stack 
+    - elastic_stack 
