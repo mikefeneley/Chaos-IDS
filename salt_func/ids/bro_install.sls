@@ -6,6 +6,8 @@ get_bro_repo:
     - name: https://github.com/bro/bro.git
     - target: /tmp/bro
     - submodules: True
+    - require:
+      - sls: bro_dep
 
 bro_configure:
   cmd.run:
