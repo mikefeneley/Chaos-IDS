@@ -1,3 +1,5 @@
+# Install bro from source on target minion.
+
 include:
   - bro_dep
 

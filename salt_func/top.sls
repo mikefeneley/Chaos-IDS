@@ -1,3 +1,6 @@
+# Top file containing state configurations
+# for network monitoring system
+
 base:
   '*':
     - dev

@@ -1,3 +1,4 @@
+# Install common development tools
 install_git:
   pkg.installed:
     - name: git

@@ -1,3 +1,7 @@
+# Install logstash on target minion.
+# Issue: Not platform independent. Relies on debian packages and apt-get package manger.
+# Resolve: Either add platform target for minion or make installation more generic.
+
 include:
   - java
 

@@ -1,3 +1,5 @@
+# Install all packages required to install bro ids
+
 get_make:
   pkg.installed: 
     - name: make
