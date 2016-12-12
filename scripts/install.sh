@@ -8,5 +8,4 @@ sudo apt-get install salt-syndic
 
 # Create top level salt directory and move all files into directory
 mkdir -p /srv/salt
-mv ../salt_conf/*.sls /srv/salt/
- 
+cp -r ../salt_func/*.sls /srv/salt/

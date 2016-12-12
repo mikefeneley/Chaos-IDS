@@ -26,7 +26,6 @@ get_ssl:
   pkg.installed:
     - name: libssl-dev
 
-
 get_libpcap:
   pkg.installed:
     - name: libpcap-dev
